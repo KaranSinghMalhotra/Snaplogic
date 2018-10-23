@@ -1,0 +1,96 @@
+{
+    "class_id": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount",
+    "class_version": 3,
+    "migration_metadata": {
+        "source_org": "LiveCareer"
+    },
+    "property_map": {
+        "info": {
+            "label": {
+                "value": "SQL_INTL_LiveCareer"
+            },
+            "notes": {
+                "value": null
+            }
+        },
+        "settings": {
+            "advancedProperties": {
+                "value": {
+                    "acquireIncrement": {
+                        "value": 1
+                    },
+                    "autoCommit": {
+                        "value": true
+                    },
+                    "batchSize": {
+                        "value": 50
+                    },
+                    "checkoutTimeout": {
+                        "value": 10000
+                    },
+                    "fetchSize": {
+                        "value": 100
+                    },
+                    "idleConnectionTestPeriod": {
+                        "value": 5
+                    },
+                    "maxIdleTime": {
+                        "value": 30
+                    },
+                    "maxPoolSize": {
+                        "value": 50
+                    },
+                    "minPoolSize": {
+                        "value": 0
+                    },
+                    "retryAttempts": {
+                        "value": 0
+                    },
+                    "urlProperties": {
+                        "value": [
+                            {
+                                "urlPropertyName": {
+                                    "value": "selectMethod"
+                                },
+                                "urlPropertyValue": {
+                                    "value": "cursor"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "connectionProperties": {
+                "value": {
+                    "JdbcDriversProp": {
+                        "value": []
+                    },
+                    "databaseName": {
+                        "value": "livecareer"
+                    },
+                    "hostname": {
+                        "value": "intlgeoprod.database.windows.net"
+                    },
+                    "jdbcDriverClass": {
+                        "value": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+                    },
+                    "password": {
+                        "fp": "8fda4fbc0f4833a7909fdbf0557fb636592dab47ae588a96ce3655389f6ed637",
+                        "key": "account-cloud-managed-55931e1aa415f539d6b8bd86-2015-06-30T22:54:39-805956",
+                        "value": "jxRF4zBb9uw4/qpcZuAGsvtbtc7nInkworh2399GMUH7XmEttQlRDlm2Qnf3zlge88Q76FqLktpwokmp2s9/FacSheW2mBDVzXGb+LSPIRYhEB/jB+oYMCCUQxxXtlWd/mNB9UzXQH9OYYmRQD6qKmO/CzhGeh8GenhDwS4w5D5iiEE44NONjCzg5PQqkWHpZROLYD80KlXAe9YkyXIgX867u/ItXZulZ6frw0XuCubNDmcQcSSPHfmPKwtH4PNW7P3xb8YCcelapycUcXvmoiUKAwAJJsuFpemLvpiYs6t7wdvyDjlTgdLMyRr5P+uCCFVBDeMjBia1dKJ43NulBg=="
+                    },
+                    "portNumber": {
+                        "value": 1433
+                    },
+                    "username": {
+                        "value": "bi_extract"
+                    },
+                    "version": {
+                        "value": "SQLSERVER2008"
+                    }
+                }
+            }
+        },
+        "view_serial": 100
+    }
+}
