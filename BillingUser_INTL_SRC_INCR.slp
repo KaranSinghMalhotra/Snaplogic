@@ -274,7 +274,7 @@
                     },
                     "sqlStatement": {
                         "expression": false,
-                        "value": "select partyid,portalid,customerid,issandboxuser,useruid,clientcd  from (select *,row_number()over(partition by partyid,portalid,customerid order by issandboxuser desc) as rnk from (\nselect distinct cuid as partyid,19 as portalid,t.customerid,c.useruid,c.clientcd,case when gatewayreference='Fake Transaction' then 1 else 0 end as issandboxuser \nfrom [transaction] t inner join customer c on t.customerid=c.customerid and c.cuid not in ('BackupUser_1')\nwhere clientcd in ('JEMPP','JBTUS') and cuid is not null\n) as t) as t1\nwhere rnk=1"
+                        "value": "select partyid,portalid,customerid,issandboxuser,useruid,clientcd  from (select *,row_number()over(partition by partyid,portalid,customerid order by issandboxuser desc) as rnk from (\nselect distinct cuid as partyid,20 as portalid,t.customerid,c.useruid,c.clientcd,case when gatewayreference='Fake Transaction' then 1 else 0 end as issandboxuser \nfrom [transaction] t inner join customer c on t.customerid=c.customerid and c.cuid not in ('BackupUser_1')\nwhere clientcd in ('JEMPP','JBTUS') and cuid is not null\n) as t) as t1\nwhere rnk=1"
                     }
                 },
                 "view_serial": 101
